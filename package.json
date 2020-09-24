@@ -1,20 +1,29 @@
 {
-  "name": "test-bed",
-  "version": "0.0.1",
-  "description": "An area to test implementations on an ad hoc basis.",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest",
+	"name": "test-bed",
+	"version": "0.0.1",
+	"description": "An area to test implementations on an ad hoc basis.",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest",
 		"test:watch": "jest --watch",
 		"clean": "rm -rf dist",
-		"build": "npm run clean && tsc --build tsconfig.json"
-  },
-  "keywords": [],
-  "author": "Evans Owino",
-  "license": "MIT",
-  "devDependencies": {
-    "jest": "^26.4.2",
-    "ts-jest": "^26.4.0",
-    "typescript": "^4.0.3"
-  }
+		"build": "npm run clean && tsc --build tsconfig.json",
+		"format": "eslint . --fix '**/*.{js,jsx,ts,tsx}'",
+		"format:check": "eslint . '**/*.{js,jsx,ts,tsx}'"
+	},
+	"keywords": [],
+	"author": "Evans Owino",
+	"license": "MIT",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^2.21.0",
+		"@typescript-eslint/parser": "^2.21.0",
+		"jest": "^26.4.2",
+		"ts-jest": "^26.4.0",
+		"typescript": "^4.0.3",
+		"eslint": "^6.8.0",
+		"eslint-config-prettier": "^6.10.0",
+		"eslint-plugin-import": "^2.20.1",
+		"eslint-plugin-prettier": "^3.1.2",
+		"prettier": "^1.19.1"
+	}
 }
