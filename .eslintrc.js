@@ -109,7 +109,7 @@ module.exports = {
         // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/indent.md
         '@typescript-eslint/indent': 'off',
         // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/interface-name-prefix.md
-        '@typescript-eslint/interface-name-prefix': [defaultSeverity, 'always'],
+        '@typescript-eslint/interface-name-prefix': 'off',
         // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-ordering.md
         '@typescript-eslint/member-ordering': [defaultSeverity, {
             'default': [
